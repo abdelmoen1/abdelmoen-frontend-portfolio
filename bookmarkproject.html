@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bookmark Landing Page Project</title>
+
+    <meta name="description"
+        content="Responsive and accessible bookmark landing page built with HTML, CSS and JavaScript.">
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- CSS Order: Base → Layout → Project → Libraries -->
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/projectsStyle.css">
+    <link rel="stylesheet" href="CSS/all.min.css">
+
+    <!-- Google Fonts (Merged to avoid repetition) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <!-- Logo -->
+            <a href="./index.html" class="logo">
+                <img src="images/logo.png" alt="Abdelmoen Logo">
+                <h1>Portfolio</h3>
+            </a>
+
+            <!-- Navigation landmark -->
+            <nav aria-label="Main Navigation">
+                <span><i class="fa-solid fa-bars"></i></span>
+
+
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#keys-features">Key Features</a></li>
+                    <li><a href="#technologies">Technologies</a></li>
+                    <a class="github-link" href="https://github.com/abdelmoen1" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-github"></i>
+                        Github
+                    </a>
+                </ul>
+            </nav>
+
+
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="section">
+            <div class="container project-page">
+
+                <h1>Bookmark Landing Page</h1>
+
+                <p class="project-subtitle">
+                    Responsive and accessible landing page for a simple bookmark manager web app,
+                    built with HTML, CSS, and JavaScript.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- Overview -->
+        <section id="overview" class="section conv-bgcolor">
+            <div class="container">
+
+                <div class="over-desc">
+
+                    <h1>Project Overview</h1>
+
+                    <p>
+                        A responsive and accessible landing page for a simple bookmark manager web app.
+                        This project demonstrates strong fundamentals in HTML, CSS, and Vanilla JavaScript
+                        while prioritizing accessibility and mobile-first design.
+                    </p>
+
+                    <div class="btn-container">
+
+                        <a href="https://abdelmoen1.github.io/bookmark-landing-page/" target="_blank" rel="noopener"
+                            class="btn-link">
+                            Live Demo
+                        </a>
+
+                        <a href="https://github.com/abdelmoen1/bookmark-landing-page" target="_blank" rel="noopener"
+                            class="github-link">
+                            <i class="fa-brands fa-github"></i>
+                            Code Source
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <img src="images/project6.png" alt="Bookmark Landing Page Preview" loading="lazy">
+
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section id="keys-features" class="section">
+            <div class="container">
+                <ul>
+                    <h1>Features</h1>
+                    <li><i class="fa-solid fa-check" aria-hidden="true"></i> Fully responsive layout for desktop,
+                        tablet, and mobile</li>
+                    <li><i class="fa-solid fa-check" aria-hidden="true"></i> Accessibility-friendly design (semantic
+                        HTML + keyboard navigation + ARIA)</li>
+                    <li><i class="fa-solid fa-check" aria-hidden="true"></i> Clean and modern UI</li>
+                    <li><i class="fa-solid fa-check" aria-hidden="true"></i> Interactive FAQ section</li>
+                    <li><i class="fa-solid fa-check" aria-hidden="true"></i> Cross-browser support (Chrome, Firefox,
+                        Opera)</li>
+                </ul>
+
+                <img src="images/newfeatures.png" alt="Project Features Preview" loading="lazy">
+
+            </div>
+        </section>
+
+        <!-- Technologies -->
+        <section id="technologies" class="section conv-bgcolor">
+            <div class="container">
+
+                <h2>Technologies Used</h2>
+
+                <div class="skills-grid">
+
+                    <div class="skill">
+                        <h3>HTML</h3>
+                        <i class="fa-brands fa-html5"></i>
+                        <span>HTML5</span>
+                    </div>
+
+                    <div class="skill">
+                        <h3>CSS</h3>
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <span>CSS3</span>
+                    </div>
+
+                    <div class="skill">
+                        <h3>JavaScript</h3>
+                        <i class="fa-brands fa-js"></i>
+                        <span>ES6</span>
+                    </div>
+
+                </div>
+
+                <!-- Links -->
+                <h2>Contact</h2>
+                <div class="contact-links">
+                    <a
+                        href="mailto:abdelmoen543@gmail.com?subject=Freelance Project&body=Hello Abdelmoen, I saw your portfolio and...">
+                        <i class="fa-solid fa-envelope"></i>
+                        aboodbarbari543@gmail.com
+                    </a>
+
+                    <a href="https://instagram.com/abdelmoen1">
+                        <i class="fa-brands fa-instagram"></i>
+                        abdelmoen1
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Abdelmoen</p>
+
+    </footer>
+
+    <!-- Main Script -->
+    <script src="JS/main.js"></script>
+</body>
+
+</html>

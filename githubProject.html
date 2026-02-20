@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GitHub User Search Project</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/projectsStyle.css">
+    <link rel="stylesheet" href="CSS/all.min.css">
+
+    <!-- Google Fonts (Merged to avoid repetition) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <!-- Logo -->
+            <a href="./index.html" class="logo">
+                <img src="images/logo.png" alt="Abdelmoen Logo">
+                <h1>Portfolio</h3>
+            </a>
+
+            <!-- Navigation landmark -->
+            <nav aria-label="Main Navigation">
+                <span><i class="fa-solid fa-bars"></i></span>
+
+
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#keys-features">Key Features</a></li>
+                    <li><a href="#technologies">Technologies</a></li>
+                    <a class="github-link" href="https://github.com/abdelmoen1" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-github"></i>
+                        Github
+                    </a>
+                </ul>
+            </nav>
+
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Hero -->
+        <section class="section">
+            <div class="container project-page">
+
+                <h1>GitHub User Search</h1>
+
+                <p class="project-subtitle">
+                    A modern and responsive web application that fetches and displays GitHub user data using the GitHub
+                    REST API.
+                    This project demonstrates API integration, dynamic DOM rendering, theme persistence using
+                    LocalStorage,
+                    and structured UI state management using Vanilla JavaScript.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- Overview -->
+        <section id="overview" class="section conv-bgcolor">
+            <div class="container">
+
+                <div class="over-desc">
+
+                    <h1>Project Overview</h1>
+
+                    <p>
+                        GitHub User Search allows users to search for any public GitHub profile and view essential
+                        information
+                        such as repositories, followers, bio, and social links.
+
+                        The application is built entirely with HTML, CSS, and Vanilla JavaScript without any frameworks,
+                        focusing on clean architecture, DOM manipulation, and asynchronous API handling.
+                    </p>
+
+                    <div class="btn-container">
+
+                        <a href="https://abdelmoen1.github.io/github-user-search/" target="_blank" rel="noopener"
+                            class="btn-link">
+                            Live Demo
+                        </a>
+
+                        <a href="https://github.com/abdelmoen1/github-user-search" target="_blank" rel="noopener"
+                            class="github-link">
+                            <i class="fa-brands fa-github"></i>
+                            Code Source
+                        </a>
+
+                    </div>
+                </div>
+
+                <img src="images/project3.png" alt="GitHub User Search Preview" loading="lazy">
+
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section id="keys-features" class="section">
+            <div class="container">
+                <ul>
+                    <h1>Features</h1>
+                    <li>🔍 Search for any public GitHub user</li>
+                    <li>📡 Fetch data from the GitHub REST API</li>
+                    <li>⏳ Custom loading animation</li>
+                    <li>❌ Error handling</li>
+                    <li>🎨 Light / Dark mode toggle</li>
+                    <li>💾 Theme persistence using LocalStorage</li>
+                    <li>📱 Fully responsive layout (Flexbox & Grid)</li>
+                </ul>
+
+                <img src="images/newfeatures.png" alt="Features Preview" loading="lazy">
+
+            </div>
+        </section>
+
+        <!-- Technologies -->
+        <section id="technologies" class="section conv-bgcolor">
+            <div class="container">
+
+                <h2>Technologies Used</h2>
+
+                <div class="skills-grid">
+
+                    <div class="skill">
+                        <h3>HTML</h3>
+                        <i class="fa-brands fa-html5"></i>
+                        <span>HTML5</span>
+                    </div>
+
+                    <div class="skill">
+                        <h3>CSS</h3>
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <span>CSS3</span>
+                    </div>
+
+                    <div class="skill">
+                        <h3>JavaScript</h3>
+                        <i class="fa-brands fa-js"></i>
+                        <span>ES6</span>
+                    </div>
+
+                    <div class="skill">
+                        <h3>API</h3>
+                        <img src="images/api.png" alt="API Icon">
+                        <span>REST API</span>
+                    </div>
+
+                </div>
+
+                <!-- Links -->
+                <h2>Contact</h2>
+                <div class="contact-links">
+                    <a
+                        href="mailto:abdelmoen543@gmail.com?subject=Freelance Project&body=Hello Abdelmoen, I saw your portfolio and...">
+                        <i class="fa-solid fa-envelope"></i>
+                        aboodbarbari543@gmail.com
+                    </a>
+
+                    <a href="https://instagram.com/abdelmoen1">
+                        <i class="fa-brands fa-instagram"></i>
+                        abdelmoen1
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Abdelmoen</p>
+
+    </footer>
+
+    <!-- Main Script -->
+    <script src="JS/main.js"></script>
+</body>
+
+</html>

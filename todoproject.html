@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- ================= Meta ================= -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Todo App Project</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Styles (يفضل normalize قبل style دائماً) -->
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/projectsStyle.css">
+    <link rel="stylesheet" href="CSS/all.min.css">
+
+    <!-- Google Fonts (Merged to avoid repetition) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ================= Header / Navbar ================= -->
+    <header>
+        <div class="container">
+            <!-- Logo -->
+            <a href="./index.html" class="logo">
+                <img src="images/logo.png" alt="Abdelmoen Logo">
+                <h1>Portfolio</h3>
+            </a>
+
+            <!-- Navigation landmark -->
+            <nav aria-label="Main Navigation">
+                <span><i class="fa-solid fa-bars"></i></span>
+                <!-- Navigation Links -->
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#keys-features">Key Features</a></li>
+                    <li><a href="#technologies">Technologies</a></li>
+                    <!-- External Link -->
+                    <a class="github-link" href="https://github.com/abdelmoen1" target="_blank"
+                        rel="noopener noreferrer" aria-label="Visit my GitHub profile">
+
+                        <i class="fa-brands fa-github" aria-hidden="true"></i>
+                        Github
+                    </a>
+                </ul>
+
+            </nav>
+
+
+
+        </div>
+    </header>
+
+
+    <!-- ================= Main Content ================= -->
+    <main id="main-content">
+
+
+        <!-- ================= Project Header ================= -->
+        <section class="section">
+            <div class="container project-page">
+
+                <h1>Todo App</h1>
+
+                <p class="project-subtitle">
+                    A production-ready Todo application built with HTML, CSS, and Vanilla JavaScript.
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- ================= Overview ================= -->
+        <section id="overview" class="section conv-bgcolor">
+            <div class="container">
+
+                <div class="over-desc">
+
+                    <h1>Project Overview</h1>
+
+                    <p>
+                        The app allows users to manage tasks efficiently with CRUD functionality,
+                        filtering options, theme switching, and persistent storage using LocalStorage.
+                    </p>
+
+                    <div class="btn-container">
+
+                        <a href="https://abdelmoen1.github.io/smart-todo-app/" target="_blank" rel="noopener noreferrer"
+                            class="btn-link">
+                            Live Demo
+                        </a>
+
+                        <a href="https://github.com/abdelmoen1/smart-todo-app" target="_blank" rel="noopener noreferrer"
+                            class="github-link">
+
+                            <i class="fa-brands fa-github" aria-hidden="true"></i>
+                            Source Code
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Main Image -->
+                <img src="images/project1.png" alt="Todo App interface preview">
+
+            </div>
+        </section>
+
+
+        <!-- ================= Features ================= -->
+        <section id="keys-features" class="section">
+            <div class="container">
+
+
+                <ul>
+                    <h1>Key Features</h1>
+                    <li><i class="fa-solid fa-check" aria-hidden="true"></i> Add new tasks</li>
+                    <li><i class="fa-solid fa-check" aria-hidden="true"></i> Edit existing tasks</li>
+                    <li><i class="fa-solid fa-check" aria-hidden="true"></i> Delete tasks</li>
+                    <li><i class="fa-solid fa-check" aria-hidden="true"></i> Mark tasks as completed</li>
+                    <li><i class="fa-solid fa-check" aria-hidden="true"></i> Filter tasks</li>
+                    <li><i class="fa-solid fa-check" aria-hidden="true"></i> Clear completed tasks</li>
+                    <li><i class="fa-solid fa-check" aria-hidden="true"></i> Theme toggle</li>
+                    <li><i class="fa-solid fa-check" aria-hidden="true"></i> LocalStorage persistence</li>
+                    <li><i class="fa-solid fa-check" aria-hidden="true"></i> Responsive design</li>
+
+                </ul>
+
+                <img src="images/newfeatures.png" alt="Todo App features preview">
+
+            </div>
+        </section>
+
+
+        <!-- ================= Technologies ================= -->
+        <section id="technologies" class="section conv-bgcolor">
+            <div class="container">
+
+                <h2>Technologies Used</h2>
+
+                <div class="skills-grid">
+
+                    <div class="skill">
+                        <h3>HTML</h3>
+                        <i class="fa-brands fa-html5" aria-hidden="true"></i>
+                        <span>HTML5</span>
+                    </div>
+
+                    <div class="skill">
+                        <h3>CSS</h3>
+                        <i class="fa-brands fa-css3-alt" aria-hidden="true"></i>
+                        <span>CSS3</span>
+                    </div>
+
+                    <div class="skill">
+                        <h3>JavaScript</h3>
+                        <i class="fa-brands fa-js" aria-hidden="true"></i>
+                        <span>ES6</span>
+                    </div>
+
+                    <div class="skill">
+                        <h3>LocalStorage</h3>
+                        <i class="fa-solid fa-database" aria-hidden="true"></i>
+                        <span>LocalStorage API</span>
+                    </div>
+
+                </div>
+                <!-- Links -->
+                <h2>Contact</h2>
+                <div class="contact-links">
+                    <a
+                        href="mailto:abdelmoen543@gmail.com?subject=Freelance Project&body=Hello Abdelmoen, I saw your portfolio and...">
+                        <i class="fa-solid fa-envelope"></i>
+                        aboodbarbari543@gmail.com
+                    </a>
+
+                    <a href="https://instagram.com/abdelmoen1">
+                        <i class="fa-brands fa-instagram"></i>
+                        abdelmoen1
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Abdelmoen</p>
+
+    </footer>
+    <!-- Main Script -->
+    <script src="JS/main.js"></script>
+
+</body>
+
+</html>

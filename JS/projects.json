@@ -1,0 +1,46 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "title": "Modern Landing Page",
+            "description": "Responsive landing page built using HTML & CSS.",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "image": "images/project4.png",
+            "liveDemo": "https://abdelmoen1.github.io/modern-responsive-landing-page/",
+            "githubRepo": "https://github.com/abdelmoen1/modern-responsive-landing-page",
+            "detailsPage": "./modernLandingProject.html"
+        },
+        {
+            "id": 2,
+            "title": "Image Slider",
+            "description": "Accessible responsive image slider with keyboard support (Vanilla JS).  ",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "image": "images/project5.png",
+            "liveDemo": "https://abdelmoen1.github.io/image-slider/",
+            "githubRepo": "https://github.com/abdelmoen1/image-slider",
+            "detailsPage": "./imagesliderproject.html"
+        },
+        {
+            "id": 3,
+            "title": "Bookmark Landing Page",
+            "description": "Responsive accessible bookmark landing page using HTML, CSS, and JavaScript.",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "image": "images/project6.png",
+            "liveDemo": "https://abdelmoen1.github.io/bookmark-landing-page/",
+            "githubRepo": "https://github.com/abdelmoen1/bookmark-landing-page",
+            "detailsPage": "./bookmarkproject.html"
+        }
+    ]
+}

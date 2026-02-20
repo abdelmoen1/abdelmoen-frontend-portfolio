@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title -->
+    <title>Abdelmoen Portfolio</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- Google Fonts (Merged to avoid repetition) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+
+    <!-- ===================== Navbar ===================== -->
+    <header>
+        <div class="container">
+
+            <!-- Logo -->
+            <a href="./index.html" class="logo">
+                <img src="images/logo.png" alt="Abdelmoen Logo">
+                <h1>Portfolio</h3>
+            </a>
+
+            <!-- Navigation landmark -->
+            <nav aria-label="Main Navigation">
+                <span><i class="fa-solid fa-bars"></i></span>
+                <!-- Navigation Links -->
+                <ul>
+                    <li><a href="./index.html" class="active">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!-- External Github Link -->
+                    <a class="github-link" href="https://github.com/abdelmoen1" target="_blank"
+                        rel="noopener noreferrer" aria-label="Visit my GitHub profile">
+
+                        <i class="fa-brands fa-github" aria-hidden="true"></i>
+                        Github
+                    </a>
+            </nav>
+            </ul>
+
+
+        </div>
+    </header>
+
+    <!-- ===================== Main Content ===================== -->
+    <main id="main-content">
+
+        <!-- ===================== Hero Section ===================== -->
+        <section class="profile">
+            <div class="container">
+
+                <!-- Profile Image -->
+                <img src="images/profile.jpg" alt="Abdelmoen personal photo">
+
+                <!-- Hero Description -->
+                <div class="profile-desc">
+                    <h1>
+                        Hi, I'm <span class="name">Abd Almoen</span>
+                    </h1>
+
+                    <p>Frontend Developer</p>
+
+                    <p>
+                        I build responsive and dynamic web applications using
+                        <span class="skills">HTML, CSS and JavaScript.</span>
+                    </p>
+
+                    <!-- Internal navigation -->
+                    <a href="#projects" class="btn-link">
+                        View my work
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ===================== Skills Section ===================== -->
+        <section id="skills" class="section conv-bgcolor">
+            <div class="container">
+
+                <h2>My Skills</h2>
+
+                <!-- Skills Grid -->
+                <div class="skills-grid">
+
+                    <!-- Skill Item -->
+                    <div class="skill">
+                        <h3>HTML</h3>
+                        <i class="fa-brands fa-html5" aria-hidden="true"></i>
+                        <span>HTML5</span>
+                    </div>
+
+                    <div class="skill">
+                        <h3>CSS</h3>
+                        <i class="fa-brands fa-css3-alt" aria-hidden="true"></i>
+                        <span>CSS3</span>
+                    </div>
+
+                    <div class="skill">
+                        <h3>JavaScript</h3>
+                        <i class="fa-brands fa-js" aria-hidden="true"></i>
+                        <span>ES6</span>
+                    </div>
+
+                    <div class="skill">
+                        <h3>LocalStorage</h3>
+                        <i class="fa-solid fa-database" aria-hidden="true"></i>
+                        <span>Local Storage</span>
+                    </div>
+
+                    <div class="skill">
+                        <h3>API</h3>
+                        <img src="images/api.png" alt="API icon">
+                        <span>API Integration</span>
+                    </div>
+
+                    <div class="skill">
+                        <h3>Git</h3>
+                        <img src="images/git.png" alt="Git icon">
+                        <span>Version Control</span>
+                    </div>
+
+                    <div class="skill">
+                        <h3>GitHub</h3>
+                        <i class="fa-brands fa-github" aria-hidden="true"></i>
+                        <span>Project Hosting</span>
+                    </div>
+
+                    <div class="skill">
+                        <h3>Accessibility</h3>
+                        <i class="fa-solid fa-universal-access" aria-hidden="true"></i>
+                        <span>Web Accessibility</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ===================== Projects Section ===================== -->
+        <section id="projects" class="section">
+            <div class="container">
+
+                <h2>Projects</h2>
+
+                <div class="projects-grid">
+
+                    <!-- Project Card -->
+                    <article class="card">
+
+                        <a href="./todoproject.html">
+                            <img src="images/project1.png" alt="Todo App preview">
+
+                            <h3>Todo App</h3>
+
+                            <p>
+                                Todo application built using DOM manipulation and LocalStorage.
+                            </p>
+
+                            <div class="tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>LocalStorage</span>
+                            </div>
+                        </a>
+
+                        <div class="btn-container">
+                            <a href="https://abdelmoen1.github.io/smart-todo-app/" target="_blank"
+                                rel="noopener noreferrer" class="btn-link">
+                                Live Demo
+                            </a>
+
+                            <a href="https://github.com/abdelmoen1/smart-todo-app" target="_blank"
+                                rel="noopener noreferrer" class="github-link">
+                                Github Repo
+                            </a>
+                        </div>
+
+                    </article>
+                    <article class="card">
+                        <a href="./weatherProject.html">
+                            <img src="images/project2.png" alt="Weather App preview">
+                            <h3>Weather App</h3>
+                            <p>Weather application using API.</p>
+                            <div class="tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>API</span>
+                            </div>
+                        </a>
+                        <div class="btn-container">
+                            <a href="https://abdelmoen1.github.io/climafy/" target="_blank" rel="noopener noreferrer"
+                                class="btn-link">Live Demo</a>
+                            <a href="https://github.com/abdelmoen1/climafy" target="_blank" rel="noopener noreferrer"
+                                class="github-link">Github
+                                Repo</a>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <a href="./githubProject.html">
+                            <img src="images/project3.png" alt="github Searcher preview">
+                            <h3>GitHub Search</h3>
+                            <p>Search for GitHub users using API.</p>
+                            <div class="tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>API</span>
+                            </div>
+                        </a>
+                        <div class="btn-container">
+                            <a href="https://abdelmoen1.github.io/github-user-search/" target="_blank"
+                                rel="noopener noreferrer" class="btn-link">Live Demo</a> <a
+                                href="https://github.com/abdelmoen1/github-user-search" target="_blank"
+                                rel="noopener noreferrer" class="github-link">Github Repo</a>
+                        </div>
+                    </article>
+
+                    <!-- باقي الكروت نفس الفكرة -->
+                    <!-- (نفس التعديلات accessibility + rel + alt) -->
+
+                </div>
+
+                <!-- Button for loading more projects -->
+                <button type="button" class="more-projects" aria-label="Load more projects">
+                    View more
+                </button>
+
+            </div>
+        </section>
+
+
+        <!-- ===================== Contact Section ===================== -->
+        <section id="contact" class="section conv-bgcolor">
+            <div class="container">
+
+                <h2>Contact</h2>
+
+                <div class="contact-links">
+
+                    <!-- Email -->
+                    <a
+                        href="mailto:abdelmoen543@gmail.com?subject=Freelance Project&body=Hello Abdelmoen, I saw your portfolio and...">
+                        <i class="fa-solid fa-envelope"></i>
+                        aboodbarbari543@gmail.com
+                    </a>
+
+                    <!-- Github -->
+                    <a href="https://instagram.com/abdelmoen1" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                        abdelmoen1
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- ===================== Footer ===================== -->
+    <footer>
+        <p>© 2026 Abdelmoen</p>
+
+    </footer>
+
+    <!-- Main Script -->
+    <script src="JS/main.js"></script>
+
+</body>
+
+</html>
