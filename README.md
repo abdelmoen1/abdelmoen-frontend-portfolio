@@ -66,7 +66,7 @@ Welcome to my **Frontend Developer Portfolio**! This portfolio showcases my proj
 
 ## 🔗 Links
 
-- **Portfolio Live:** [abdelmoen1.github.io](https://abdelmoen1.github.io)  
+- **Portfolio Live:** [abdelmoen1.github.io](https://abdelmoen1.github.io/abdelmoen-frontend-portfolio/)  
 - **GitHub Repositories:** [GitHub](https://github.com/abdelmoen1)  
 
 ---
