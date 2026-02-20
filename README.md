@@ -90,7 +90,7 @@ Welcome to my **Frontend Developer Portfolio**! This portfolio showcases my proj
 ---
 ## 📸 Screenshots
 
-![Portfolio Banner](images/portfolio-banner.png)
+![Portfolio Banner](/images/protfolio-banner.png)
 
 ---
 
