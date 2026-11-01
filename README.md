@@ -1,97 +1,60 @@
-# 🌟 Abdelmoen Portfolio V1
+# Abdelmoen Al-Barbari | Portfolio V2
 
-Welcome to my **Frontend Developer Portfolio**! This portfolio showcases my projects, skills, and growth as a web developer. Built with **HTML, CSS, and Vanilla JavaScript**, it features a clean, responsive design with dark/light mode support and accessibility in mind.
+A one-page portfolio for a full-stack developer building Arabic-first products. Built with plain **HTML, CSS and JavaScript**, with no framework and no build step.
 
----
+**Live:** [abdelmoen1.github.io/abdelmoen-frontend-portfolio](https://abdelmoen1.github.io/abdelmoen-frontend-portfolio/)
 
-## 📝 About This Portfolio
-
-- **Version:** V1
-- **Theme Toggle:** Dark / Light mode support for better UX.
-- Fully **responsive layout** for desktop, tablet, and mobile screens.
-- Built with **semantic HTML**, **modern CSS techniques**, and **Vanilla JavaScript**.
-- Prioritizes **accessibility**: keyboard navigation, ARIA attributes, and color contrast.
-- Dynamic project sections showcasing live demos and GitHub repositories.
-- Easy to maintain and extend for future projects.
+![Portfolio preview](images/og.png)
 
 ---
 
-## 💻 Projects Included
+## Projects
 
-1. **Todo App** – Manage tasks efficiently with CRUD functionality, filtering, theme switching, and LocalStorage persistence.  
-   - [Live Demo](https://abdelmoen1.github.io/github-user-search/) | [GitHub Repo](https://github.com/abdelmoen1/github-user-search)
+### Hisbah (حسبة)
 
-2. **Weather App** – Real-time weather forecasts with unit conversion, hourly and daily breakdown, API integration, and loading animations.  
-   - [Live Demo](https://abdelmoen1.github.io/github-user-search/) | [GitHub Repo](https://github.com/abdelmoen1/github-user-search)
+A debt book and sales app for small grocery shops. Staff sell from an Android phone, each customer's debt stays under their name, and the owner runs stock and reports from any browser.
 
-3. **GitHub User Search** – Fetch and display GitHub user data dynamically with light/dark mode and persistent theme using LocalStorage.  
-   - [Live Demo](https://abdelmoen1.github.io/github-user-search/) | [GitHub Repo](https://github.com/abdelmoen1/github-user-search)
+- [Open Hisbah](https://hisbah-web.vercel.app) | [View the code](https://github.com/abdelmoen1/micro-erp-system)
+- Laravel 12, React 19, Flutter, MySQL
 
-4. **Modern Landing Page** – Clean, responsive landing page template using modern CSS techniques and reusable components.  
-   - [Live Demo](https://abdelmoen1.github.io/modern-responsive-landing-page/) | [GitHub Repo](https://github.com/abdelmoen1/modern-responsive-landing-page)
+### GoTrainee
 
-5. **Image Slider** – Responsive and accessible image slider with keyboard support, dynamic navigation, and smooth transitions.  
-   - [Live Demo](https://abdelmoen1.github.io/image-slider/) | [GitHub Repo](https://github.com/abdelmoen1/image-slider)
+A platform that lets small organizations order digital solutions without hiring anyone. An AI chat turns the need into a clear brief, and a tested freelance team delivers it one milestone at a time.
 
-6. **Bookmark Landing Page** – Accessible landing page for a bookmark manager web app, with interactive FAQ section and modern UI design.  
-   - [Live Demo](https://abdelmoen1.github.io/bookmark-landing-page/) | [GitHub Repo](https://github.com/abdelmoen1/bookmark-landing-page)
+- [Open GoTrainee](https://gotrainee-web.onrender.com) | [View the code](https://github.com/abdelmoen1/Frontend)
+- Laravel 12, React 19, Gemini, PostgreSQL
 
 ---
 
-## 🎨 Features
+## Features
 
-- Fully responsive and mobile-friendly design.
-- Light / Dark mode toggle for improved user experience.
-- Clean UI and modern typography.
-- Interactive elements and animations using Vanilla JS.
-- API integrations for real-world data (Weather API, GitHub API).
-- Accessibility-focused: semantic HTML, ARIA attributes, and keyboard navigation.
-- Reusable components for faster project development.
-- Smooth navigation and section scrolling.
+- English and Arabic, with a full right-to-left layout switch
+- Each project section keeps its product's real colors and type
+- A working Hisbah sale demo, including the customer debt limit
+- A scroll-driven walkthrough of the GoTrainee project workflow
+- Hero background drawn on canvas: Latin and Arabic letters running in opposite directions
+- Responsive down to phone width, keyboard accessible, and respects reduced motion settings
 
 ---
 
-## 🛠 Technologies Used
+## Run it locally
 
-| Technology | Details |
-|------------|---------|
-| HTML5      | Semantic and accessible markup |
-| CSS3       | Flexbox, Grid, animations, responsive layouts |
-| JavaScript | DOM manipulation, API handling, dynamic UI |
-| LocalStorage | Persistent theme and data storage |
-| Font Awesome | Icons and visual enhancements |
-| Google Fonts | Montserrat & other typography |
+Open `index.html` in a browser, or serve the folder with any static server:
+
+```bash
+npx live-server --port=5500
+```
 
 ---
 
-## 🔗 Links
+## Contact
 
-- **Portfolio Live:** [abdelmoen1.github.io](https://abdelmoen1.github.io/abdelmoen-frontend-portfolio/)  
-- **GitHub Repositories:** [GitHub](https://github.com/abdelmoen1)  
-
----
-
-## 📫 Contact
-
-- Email: [abdelmoen543@gmail.com](mailto:abdelmoen543@gmail.com)  
-- GitHub: [abdelmoen1](https://github.com/abdelmoen1)  
+- Email: [aboodbarbari543@gmail.com](mailto:aboodbarbari543@gmail.com)
+- LinkedIn: [Abdelmoen Al-Barbari](https://www.linkedin.com/in/abdelmoen-al-barbari-8055b43b2)
+- Bright Gaza: [Talent profile](https://brightgaza.com/talents/4601)
+- GitHub: [abdelmoen1](https://github.com/abdelmoen1)
 - Instagram: [@abdelmoen1](https://instagram.com/abdelmoen1)
 
 ---
 
-## 🚀 Roadmap for Future Versions
-
-- Add **more projects** including E-commerce & UI Component Library.
-- Implement **animations and transitions** for project sections.
-- Integrate **contact form with validation**.
-- Add **filtering & sorting functionality** for project showcase.
-- Enhance accessibility further with **screen reader testing**.
-
----
-## 📸 Screenshots
-
-![Portfolio Banner](/images/protfolio-banner.png)
-
----
-
-*© 2026 Abdelmoen Al-Barbari — Built with ❤️ and Vanilla JavaScript*    
+*© 2026 Abdelmoen Al-Barbari*
