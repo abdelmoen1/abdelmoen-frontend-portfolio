@@ -1,290 +1,327 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
     <!-- Basic Meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
 
     <!-- Page Title -->
-    <title>Abdelmoen Portfolio</title>
+    <title>Abdelmoen Al-Barbari | Full-stack developer</title>
+    <meta name="description"
+        content="Full-stack developer building Arabic-first products. See Hisbah, a debt book and sales app for small shops, and GoTrainee, a platform that delivers digital solutions through tested freelance teams.">
+
+    <!-- Link Previews -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Abdelmoen Al-Barbari | Full-stack developer">
+    <meta property="og:description" content="I write code left to right for people who read right to left.">
+    <meta property="og:url" content="https://abdelmoen1.github.io/abdelmoen-frontend-portfolio/">
+    <meta property="og:image" content="https://abdelmoen1.github.io/abdelmoen-frontend-portfolio/images/og.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Changa:wght@700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=Sofia+Sans+Extra+Condensed:wght@700;800&display=swap"
+        rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="CSS/all.min.css">
-    <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/style.css">
 
-    <!-- Google Fonts (Merged to avoid repetition) -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <!-- Motion is switched on before first paint so nothing flashes -->
+    <script>
+        if (!matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("motion");
+    </script>
 </head>
 
 <body>
 
+    <a class="skip-link" href="#main-content" data-i18n="skip">Skip to content</a>
+
+    <div class="progress" aria-hidden="true"></div>
 
     <!-- ===================== Navbar ===================== -->
-    <header>
-        <div class="container">
+    <header class="site-nav">
+        <a class="site-nav__mark" href="#top" aria-label="Back to top" data-i18n-aria="toTop">
+            <svg viewBox="0 0 64 64" aria-hidden="true">
+                <path d="M12 23h32v-9l14 14H12zM52 41H20v9L6 36h46z" />
+            </svg>
+        </a>
 
-            <!-- Logo -->
-            <a href="./index.html" class="logo">
-                <img src="images/logo.png" alt="Abdelmoen Logo">
-                <h1>Portfolio</h3>
-            </a>
+        <nav aria-label="Main navigation" data-i18n-aria="navLabel">
+            <a href="#hisbah" data-scramble data-i18n="navHisbah">Hisbah</a>
+            <a href="#gotrainee" data-scramble>GoTrainee</a>
+            <a href="#stack" data-scramble data-i18n="navStack">Stack</a>
+            <a href="#contact" data-scramble data-i18n="navContact">Contact</a>
+        </nav>
 
-            <!-- Navigation landmark -->
-            <nav aria-label="Main Navigation">
-                <span><i class="fa-solid fa-bars"></i></span>
-                <!-- Navigation Links -->
-                <ul>
-                    <li><a href="./index.html" class="active">Home</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <!-- External Github Link -->
-                    <a class="github-link" href="https://github.com/abdelmoen1" target="_blank"
-                        rel="noopener noreferrer" aria-label="Visit my GitHub profile">
-
-                        <i class="fa-brands fa-github" aria-hidden="true"></i>
-                        Github
-                    </a>
-            </nav>
-            </ul>
-
-
-        </div>
+        <button class="lang-toggle" type="button">العربية</button>
     </header>
 
     <!-- ===================== Main Content ===================== -->
     <main id="main-content">
 
-        <!-- ===================== Hero Section ===================== -->
-        <section class="profile">
-            <div class="container">
+        <!-- ===================== Hero ===================== -->
+        <section class="hero" id="top" data-tone="hero">
+            <div class="hero__pin">
+                <canvas class="hero__glyphs" aria-hidden="true"></canvas>
 
-                <!-- Profile Image -->
-                <img src="images/profile.jpg" alt="Abdelmoen personal photo">
+                <h1 class="hero__name" aria-label="Abdelmoen Al-Barbari" data-i18n-aria="fullName">
+                    <span class="hero__line hero__line--ltr" lang="en" dir="ltr" aria-hidden="true">Abdelmoen</span>
+                    <span class="hero__line hero__line--rtl" lang="ar" dir="rtl" aria-hidden="true">عبد المعين</span>
+                </h1>
 
-                <!-- Hero Description -->
-                <div class="profile-desc">
-                    <h1>
-                        Hi, I'm <span class="name">Abd Almoen</span>
-                    </h1>
-
-                    <p>Frontend Developer</p>
-
-                    <p>
-                        I build responsive and dynamic web applications using
-                        <span class="skills">HTML, CSS and JavaScript.</span>
-                    </p>
-
-                    <!-- Internal navigation -->
-                    <a href="#projects" class="btn-link">
-                        View my work
-                    </a>
+                <div class="hero__portrait">
+                    <img class="hero__photo" src="images/abdelmoen.webp" width="671" height="909"
+                        alt="Abdelmoen smiling, wearing round glasses and a green shirt" data-i18n-alt="portraitAlt"
+                        fetchpriority="high">
+                    <img class="hero__photo hero__photo--color" src="images/abdelmoen.webp" width="671" height="909"
+                        alt="">
                 </div>
 
-            </div>
-        </section>
-
-
-        <!-- ===================== Skills Section ===================== -->
-        <section id="skills" class="section conv-bgcolor">
-            <div class="container">
-
-                <h2>My Skills</h2>
-
-                <!-- Skills Grid -->
-                <div class="skills-grid">
-
-                    <!-- Skill Item -->
-                    <div class="skill">
-                        <h3>HTML</h3>
-                        <i class="fa-brands fa-html5" aria-hidden="true"></i>
-                        <span>HTML5</span>
-                    </div>
-
-                    <div class="skill">
-                        <h3>CSS</h3>
-                        <i class="fa-brands fa-css3-alt" aria-hidden="true"></i>
-                        <span>CSS3</span>
-                    </div>
-
-                    <div class="skill">
-                        <h3>JavaScript</h3>
-                        <i class="fa-brands fa-js" aria-hidden="true"></i>
-                        <span>ES6</span>
-                    </div>
-
-                    <div class="skill">
-                        <h3>LocalStorage</h3>
-                        <i class="fa-solid fa-database" aria-hidden="true"></i>
-                        <span>Local Storage</span>
-                    </div>
-
-                    <div class="skill">
-                        <h3>API</h3>
-                        <img src="images/api.png" alt="API icon">
-                        <span>API Integration</span>
-                    </div>
-
-                    <div class="skill">
-                        <h3>Git</h3>
-                        <img src="images/git.png" alt="Git icon">
-                        <span>Version Control</span>
-                    </div>
-
-                    <div class="skill">
-                        <h3>GitHub</h3>
-                        <i class="fa-brands fa-github" aria-hidden="true"></i>
-                        <span>Project Hosting</span>
-                    </div>
-
-                    <div class="skill">
-                        <h3>Accessibility</h3>
-                        <i class="fa-solid fa-universal-access" aria-hidden="true"></i>
-                        <span>Web Accessibility</span>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-
-        <!-- ===================== Projects Section ===================== -->
-        <section id="projects" class="section">
-            <div class="container">
-
-                <h2>Projects</h2>
-
-                <div class="projects-grid">
-
-                    <!-- Project Card -->
-                    <article class="card">
-
-                        <a href="./todoproject.html">
-                            <img src="images/project1.png" alt="Todo App preview">
-
-                            <h3>Todo App</h3>
-
-                            <p>
-                                Todo application built using DOM manipulation and LocalStorage.
-                            </p>
-
-                            <div class="tech">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                                <span>LocalStorage</span>
-                            </div>
-                        </a>
-
-                        <div class="btn-container">
-                            <a href="https://abdelmoen1.github.io/smart-todo-app/" target="_blank"
-                                rel="noopener noreferrer" class="btn-link">
-                                Live Demo
-                            </a>
-
-                            <a href="https://github.com/abdelmoen1/smart-todo-app" target="_blank"
-                                rel="noopener noreferrer" class="github-link">
-                                Github Repo
-                            </a>
+                <div class="hero__foot">
+                    <p class="hero__claim" data-i18n="claim">I write code left to right for people who read right to
+                        left.</p>
+                    <div class="hero__intro">
+                        <p data-i18n="intro">Full-stack developer building Arabic-first products, from the database to
+                            the phone in a shopkeeper's hand.</p>
+                        <div class="hero__actions">
+                            <a class="btn" href="#hisbah" data-magnetic data-i18n="ctaWork">See my work</a>
+                            <a class="link" href="#contact" data-scramble data-i18n="ctaContact">Get in touch</a>
                         </div>
-
-                    </article>
-                    <article class="card">
-                        <a href="./weatherProject.html">
-                            <img src="images/project2.png" alt="Weather App preview">
-                            <h3>Weather App</h3>
-                            <p>Weather application using API.</p>
-                            <div class="tech">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                                <span>API</span>
-                            </div>
-                        </a>
-                        <div class="btn-container">
-                            <a href="https://abdelmoen1.github.io/climafy/" target="_blank" rel="noopener noreferrer"
-                                class="btn-link">Live Demo</a>
-                            <a href="https://github.com/abdelmoen1/climafy" target="_blank" rel="noopener noreferrer"
-                                class="github-link">Github
-                                Repo</a>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <a href="./githubProject.html">
-                            <img src="images/project3.png" alt="github Searcher preview">
-                            <h3>GitHub Search</h3>
-                            <p>Search for GitHub users using API.</p>
-                            <div class="tech">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                                <span>API</span>
-                            </div>
-                        </a>
-                        <div class="btn-container">
-                            <a href="https://abdelmoen1.github.io/github-user-search/" target="_blank"
-                                rel="noopener noreferrer" class="btn-link">Live Demo</a> <a
-                                href="https://github.com/abdelmoen1/github-user-search" target="_blank"
-                                rel="noopener noreferrer" class="github-link">Github Repo</a>
-                        </div>
-                    </article>
-
-                    <!-- باقي الكروت نفس الفكرة -->
-                    <!-- (نفس التعديلات accessibility + rel + alt) -->
-
+                    </div>
                 </div>
-
-                <!-- Button for loading more projects -->
-                <button type="button" class="more-projects" aria-label="Load more projects">
-                    View more
-                </button>
-
             </div>
         </section>
 
+        <!-- ===================== Hisbah ===================== -->
+        <section class="project project--hisbah" id="hisbah" aria-labelledby="hisbah-title">
 
-        <!-- ===================== Contact Section ===================== -->
-        <section id="contact" class="section conv-bgcolor">
-            <div class="container">
+            <div class="ticker" aria-hidden="true" dir="ltr" data-tone="teal">
+                <div class="ticker__row" data-direction="1">
+                    <span>Hisbah</span><span lang="ar">حسبة</span><span>Hisbah</span><span lang="ar">حسبة</span>
+                    <span>Hisbah</span><span lang="ar">حسبة</span><span>Hisbah</span><span lang="ar">حسبة</span>
+                </div>
+            </div>
 
-                <h2>Contact</h2>
+            <div class="wrap project__grid" data-tone="paper">
+                <div class="project__copy">
+                    <div class="project__brand">
+                        <img src="images/hisbah-logo.png" width="64" height="64" alt="Hisbah logo" loading="lazy">
+                        <p><span data-i18n="navHisbah">Hisbah</span> <span class="project__status"
+                                data-i18n="hisbahStatus">Live on web and Android</span></p>
+                    </div>
 
-                <div class="contact-links">
+                    <h2 class="project__title" id="hisbah-title" data-split data-i18n="hisbahTitle">A shop's debt book,
+                        on the phone.</h2>
+                    <hr class="double-rule" data-reveal>
 
-                    <!-- Email -->
-                    <a
-                        href="mailto:abdelmoen543@gmail.com?subject=Freelance Project&body=Hello Abdelmoen, I saw your portfolio and...">
-                        <i class="fa-solid fa-envelope"></i>
-                        aboodbarbari543@gmail.com
-                    </a>
+                    <p class="project__lead" data-reveal data-i18n="hisbahLead">Hisbah replaces the paper ledger in
+                        small grocery shops. Staff sell from an Android phone, each customer's debt stays under their
+                        name, and the owner runs stock and reports from any browser.</p>
 
-                    <!-- Github -->
-                    <a href="https://instagram.com/abdelmoen1" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-                        abdelmoen1
-                    </a>
+                    <dl class="rules">
+                        <div data-reveal>
+                            <dt data-i18n="hisbahRule1">Sell by barcode or by weight</dt>
+                            <dd data-i18n="hisbahRule1Text">Scan the same item twice and the quantity goes up. Kilo
+                                items weigh to the gram.</dd>
+                        </div>
+                        <div data-reveal>
+                            <dt data-i18n="hisbahRule2">Debt with a limit</dt>
+                            <dd data-i18n="hisbahRule2Text">A part payment leaves the rest as debt, with a due date and
+                                a cap staff can't pass.</dd>
+                        </div>
+                        <div data-reveal>
+                            <dt data-i18n="hisbahRule3">Invoices stay on record</dt>
+                            <dd data-i18n="hisbahRule3Text">A mistake is cancelled with a reason. Stock comes back and
+                                the invoice stays in the log.</dd>
+                        </div>
+                    </dl>
 
+                    <div class="project__actions">
+                        <a class="btn" href="https://hisbah-web.vercel.app" target="_blank" rel="noopener noreferrer"
+                            data-i18n="hisbahOpen">Open Hisbah</a>
+                        <a class="link" href="https://github.com/abdelmoen1/micro-erp-system" target="_blank"
+                            rel="noopener noreferrer" data-scramble data-i18n="viewCode">View the code</a>
+                    </div>
                 </div>
 
+                <!-- Interactive sale demo: always Arabic, like the product -->
+                <figure class="demo-phone">
+                    <div class="phone" id="sale-demo" lang="ar" dir="rtl"></div>
+                    <figcaption data-i18n="hisbahDemoCaption">Try it: add items, pick debt, and push past the ₪300
+                        limit. Sample data, rebuilt in plain JavaScript for this page.</figcaption>
+                </figure>
+            </div>
+
+            <!-- Scrolling sideways through the real screens -->
+            <div class="hscroll" data-tone="teal">
+                <div class="hscroll__pin">
+                    <ul class="hscroll__track" tabindex="0" aria-label="Hisbah screens"
+                        data-i18n-aria="hisbahScreensLabel">
+                        <li class="hscroll__title">
+                            <h3 data-i18n="hisbahScreens">Real screens from the app, with sample data</h3>
+                        </li>
+                        <li><img src="images/hisbah-splash.webp" width="600" height="1298" loading="lazy"
+                                alt="Hisbah splash screen with the logo" data-i18n-alt="hisbahSplashAlt"></li>
+                        <li><img src="images/hisbah-home.webp" width="600" height="1298" loading="lazy"
+                                alt="Hisbah home screen with today's sales and debts" data-i18n-alt="hisbahHomeAlt">
+                        </li>
+                        <li><img src="images/hisbah-home-end.webp" width="600" height="1298" loading="lazy"
+                                alt="Hisbah shortcuts and today's latest invoices" data-i18n-alt="hisbahEndAlt"></li>
+                        <li class="hscroll__wide"><img src="images/hisbah-web.webp" width="1440" height="828"
+                                loading="lazy" alt="Hisbah website in Arabic" data-i18n-alt="hisbahWebAlt"></li>
+                    </ul>
+                </div>
             </div>
         </section>
 
+        <!-- ===================== GoTrainee ===================== -->
+        <section class="project project--gotrainee" id="gotrainee" aria-labelledby="gotrainee-title">
+
+            <div class="ticker" aria-hidden="true" dir="ltr" data-tone="navy">
+                <div class="ticker__row" data-direction="-1">
+                    <span><b>Go</b>Trainee</span><span><b>Go</b>Trainee</span><span><b>Go</b>Trainee</span><span><b>Go</b>Trainee</span>
+                    <span><b>Go</b>Trainee</span><span><b>Go</b>Trainee</span><span><b>Go</b>Trainee</span><span><b>Go</b>Trainee</span>
+                </div>
+            </div>
+
+            <div class="wrap project__grid" data-tone="light">
+                <div class="project__copy">
+                    <div class="project__brand">
+                        <img class="project__plate" src="images/gotrainee-logo.png" width="102" height="64"
+                            alt="GoTrainee logo" loading="lazy">
+                        <p>GoTrainee <span class="project__status" data-i18n="gotraineeStatus">Release 1 in
+                                progress</span></p>
+                    </div>
+
+                    <h2 class="project__title" id="gotrainee-title" data-split data-i18n="gotraineeTitle">Describe the
+                        need. Receive the finished product.</h2>
+
+                    <p class="project__lead" data-reveal data-i18n="gotraineeLead">GoTrainee lets clinics, law offices
+                        and shops order digital solutions without hiring or managing anyone. An AI chat turns the need
+                        into a clear brief, and a tested freelance team delivers it one milestone at a time. Students
+                        and graduates get real project experience along the way.</p>
+
+                    <div class="project__actions">
+                        <a class="btn" href="https://gotrainee-web.onrender.com" target="_blank"
+                            rel="noopener noreferrer" data-i18n="gotraineeOpen">Open GoTrainee</a>
+                        <a class="link" href="https://github.com/abdelmoen1/Frontend" target="_blank"
+                            rel="noopener noreferrer" data-scramble data-i18n="viewCode">View the code</a>
+                    </div>
+                </div>
+
+                <div class="project__media">
+                    <img class="project__shot" src="images/gotrainee-web.webp" width="1440"
+                        height="800" loading="lazy" alt="GoTrainee website in Arabic"
+                        data-i18n-alt="gotraineeWebAlt">
+                    <img class="project__art" src="images/gotrainee-brand.webp" width="1024"
+                        height="768" loading="lazy" alt="GoTrainee brand artwork in navy and gold"
+                        data-i18n-alt="gotraineeBrandAlt">
+                </div>
+            </div>
+
+            <!-- Project route: each scroll step moves the sample project forward -->
+            <div class="route-pin" data-tone="navy">
+                <div class="route" id="route-demo"></div>
+            </div>
+        </section>
+
+        <!-- ===================== Stack ===================== -->
+        <section class="stack" id="stack" data-tone="black" aria-labelledby="stack-title">
+            <div class="wrap">
+                <h2 class="stack__title" id="stack-title" data-split data-i18n="stackTitle">What each product runs on
+                </h2>
+
+                <div class="stack__table" tabindex="0" role="region" aria-labelledby="stack-title">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td></td>
+                                <th scope="col" data-i18n="navHisbah">Hisbah</th>
+                                <th scope="col">GoTrainee</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row" data-i18n="layerWeb">Web</th>
+                                <td>React 19, Vite</td>
+                                <td>React 19, Vite</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" data-i18n="layerApi">API</th>
+                                <td>Laravel 12</td>
+                                <td>Laravel 12</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" data-i18n="layerMobile">Mobile</th>
+                                <td data-i18n="stackFlutter">Flutter for Android, with camera barcode scanning</td>
+                                <td class="stack__none"><span aria-hidden="true">&ndash;</span><span class="sr-only"
+                                        data-i18n="stackNone">Not used</span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" data-i18n="layerAi">AI</th>
+                                <td class="stack__none"><span aria-hidden="true">&ndash;</span><span class="sr-only"
+                                        data-i18n="stackNone">Not used</span></td>
+                                <td data-i18n="stackGemini">Gemini for discovery chats and skill tests</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" data-i18n="layerData">Database</th>
+                                <td>MySQL</td>
+                                <td>PostgreSQL</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" data-i18n="layerTests">Testing</th>
+                                <td>PHPUnit, Playwright</td>
+                                <td>PHPUnit, Vitest</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" data-i18n="layerHosting">Hosting</th>
+                                <td>Vercel, Render</td>
+                                <td>Render, Neon</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p class="stack__note" data-reveal data-i18n="stackNote">Underneath both: HTML, CSS, JavaScript, Git,
+                    right-to-left layouts and accessibility. This page uses plain HTML, CSS and JavaScript, with no
+                    framework.</p>
+            </div>
+        </section>
+
+        <!-- ===================== Contact ===================== -->
+        <section class="contact" id="contact" data-tone="black" aria-labelledby="contact-title">
+            <div class="wrap">
+                <h2 class="contact__title" id="contact-title" data-split="light" data-i18n="contactTitle">Tell me what
+                    you want to build.</h2>
+                <a class="contact__email" href="mailto:aboodbarbari543@gmail.com?subject=Project%20inquiry"
+                    dir="ltr" data-magnetic>aboodbarbari543@gmail.com</a>
+
+                <ul class="contact__links">
+                    <li><a href="https://www.linkedin.com/in/abdelmoen-al-barbari-8055b43b2" target="_blank"
+                            rel="noopener noreferrer" data-scramble>LinkedIn</a></li>
+                    <li><a href="https://brightgaza.com/talents/4601" target="_blank" rel="noopener noreferrer"
+                            data-scramble>Bright Gaza</a></li>
+                    <li><a href="https://github.com/abdelmoen1" target="_blank" rel="noopener noreferrer"
+                            data-scramble>GitHub</a></li>
+                    <li><a href="https://instagram.com/abdelmoen1" target="_blank" rel="noopener noreferrer"
+                            data-scramble>Instagram</a></li>
+                </ul>
+            </div>
+        </section>
     </main>
 
-
     <!-- ===================== Footer ===================== -->
-    <footer>
-        <p>© 2026 Abdelmoen</p>
-
+    <footer class="site-footer">
+        <p data-i18n="footer">© 2026 Abdelmoen Al-Barbari</p>
     </footer>
 
     <!-- Main Script -->
