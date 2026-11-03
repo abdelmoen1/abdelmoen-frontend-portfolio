@@ -13,7 +13,7 @@ const arabic = {
     intro: "مطوّر Full-stack أبني منتجات عربية أولاً، من قاعدة البيانات حتى الجوال في يد صاحب المحل.",
     ctaWork: "شاهد أعمالي",
     ctaContact: "تواصل معي",
-    portraitAlt: "عبد المعين مبتسماً، يرتدي نظارة مستديرة وقميصاً أخضر",
+    portraitAlt: "عبد المعين مبتسماً، يرتدي نظارة مستديرة وقميصاً رمادياً داكناً",
     hisbahStatus: "يعمل على الويب وأندرويد",
     hisbahTitle: "دفتر الدين، على الجوال.",
     hisbahLead: "حسبة يحل محل الدفتر الورقي في محلات البقالة الصغيرة. يبيع الموظف من جوال أندرويد، ويبقى دين كل زبون باسمه، ويدير المالك المخزون والتقارير من أي متصفح.",
@@ -491,7 +491,6 @@ function drawGlyphs(boost) {
 // Scroll engine: one loop drives everything that moves
 // ======================
 const hero = document.querySelector(".hero");
-const heroPortrait = document.querySelector(".hero__portrait");
 const tickers = [...document.querySelectorAll(".ticker__row")].map(row => ({
     row,
     direction: Number(row.dataset.direction),
@@ -612,25 +611,6 @@ function frame() {
 // Pointer effects
 // ======================
 function setupPointer() {
-    let lamp = 0;
-    let lastMove = 0;
-
-    window.addEventListener("pointermove", (e) => {
-        lastMove = performance.now();
-        const box = heroPortrait.getBoundingClientRect();
-        heroPortrait.style.setProperty("--lamp-x", `${e.clientX - box.left}px`);
-        heroPortrait.style.setProperty("--lamp-y", `${e.clientY - box.top}px`);
-    }, { passive: true });
-
-    // The lamp widens while the pointer moves over the hero
-    function glow() {
-        const moving = performance.now() - lastMove < 1600 && window.scrollY < heroHeight;
-        lamp += ((moving ? 480 : 0) - lamp) * .08;
-        heroPortrait.style.setProperty("--lamp", `${lamp.toFixed(1)}px`);
-        requestAnimationFrame(glow);
-    }
-    glow();
-
     // Buttons lean toward the cursor
     document.querySelectorAll("[data-magnetic]").forEach(node => {
         node.addEventListener("pointermove", (e) => {
