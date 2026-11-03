@@ -348,7 +348,7 @@ html[data-tone="black"] .site-nav {
 .hero__line {
     position: absolute;
     z-index: 1;
-    inset-block-start: 21svh;
+    inset-block-start: 13svh;
     white-space: nowrap;
     color: var(--white);
     line-height: 1;
@@ -389,13 +389,13 @@ html[data-tone="black"] .site-nav {
     z-index: 2;
     inset-block-end: 0;
     left: 50%;
-    height: 88svh;
-    aspect-ratio: 671 / 909;
+    height: 70svh;
+    aspect-ratio: 1100 / 1037;
     transform: translateX(-50%) scale(calc(1 + var(--tear) * .2));
     transform-origin: 50% 40%;
     opacity: calc(1.15 - var(--tear) * 1.5);
-    -webkit-mask-image: linear-gradient(#000 66%, transparent 96%);
-    mask-image: linear-gradient(#000 66%, transparent 96%);
+    -webkit-mask-image: linear-gradient(#000 58%, transparent 97%);
+    mask-image: linear-gradient(#000 58%, transparent 97%);
     transition: translate 1.5s var(--ease), filter 1.5s;
 }
 
@@ -406,26 +406,6 @@ html[data-tone="black"] .site-nav {
     height: 100%;
     object-fit: contain;
     object-position: bottom;
-    filter: contrast(1.04);
-}
-
-.hero__photo--color {
-    display: none;
-}
-
-/* With a pointer the photo rests in black and white and moving over it brings the color back.
-   Touch screens have no pointer, so they keep the color */
-@media (hover: hover) {
-    .motion .hero__photo {
-        filter: grayscale(1) contrast(1.15) brightness(1.04);
-    }
-
-    .motion .hero__photo--color {
-        display: block;
-        filter: contrast(1.04) saturate(1.08);
-        -webkit-mask-image: radial-gradient(circle var(--lamp, 0px) at var(--lamp-x, 50%) var(--lamp-y, 30%), #000 55%, transparent 100%);
-        mask-image: radial-gradient(circle var(--lamp, 0px) at var(--lamp-x, 50%) var(--lamp-y, 30%), #000 55%, transparent 100%);
-    }
 }
 
 .hero__foot {
@@ -1343,7 +1323,7 @@ html:not(.motion) .route__steps {
     }
 
     .hero__portrait {
-        height: min(54svh, 118vw);
+        height: min(48svh, 98vw);
         inset-block-end: 22svh;
         -webkit-mask-image: linear-gradient(#000 72%, transparent 100%);
         mask-image: linear-gradient(#000 72%, transparent 100%);
